@@ -1,7 +1,7 @@
 import { IGetUsersController, IGetUsersRepository } from "./protocol";
 
 export class GetUsersController implements IGetUsersController {
-  constructor(private getUsersRepository: IGetUsersRepository) {}
+  constructor(private readonly getUsersRepository: IGetUsersRepository) {}
 
   async handle() {
     try {
@@ -16,7 +16,7 @@ export class GetUsersController implements IGetUsersController {
     } catch (error) {
       return {
         statusCode: 500,
-        body: "something went wrong",
+        body: "something went wrong.",
       };
     }
   }
