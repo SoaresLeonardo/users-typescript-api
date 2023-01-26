@@ -67,7 +67,7 @@ const main = async () => {
       params: req.params,
     });
 
-    res.status(statusCode).send(body)
+    res.status(statusCode).send(body);
   });
 
   const port = process.env.PORT || 3000;
