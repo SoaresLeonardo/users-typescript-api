@@ -8,4 +8,3 @@ export interface IGetUsersController {
 export interface IGetUsersRepository {
   getUsers(): Promise<User[]>;
 }
-

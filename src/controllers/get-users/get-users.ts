@@ -5,8 +5,6 @@ export class GetUsersController implements IGetUsersController {
 
   async handle() {
     try {
-      // validar requisição
-      // direcionar chamada para o Repositer
       const users = await this.getUsersRepository.getUsers();
 
       return {
